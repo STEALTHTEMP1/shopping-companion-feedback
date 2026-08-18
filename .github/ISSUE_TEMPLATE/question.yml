@@ -1,0 +1,21 @@
+name: Question
+description: A question about the beta, installing it, or what it covers
+labels: ['question']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are **public and permanent**. Please leave out personal and account information.
+
+        Installation steps, manual updates, removal, and troubleshooting are on the beta website's download page; the scope of the beta is in this repository's README.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Extension version, if you have it installed
+      placeholder: '0.3.0'

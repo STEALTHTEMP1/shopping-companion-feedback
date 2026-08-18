@@ -1,0 +1,49 @@
+name: Accessibility report
+description: Something unusable with a keyboard, screen reader, magnification, or contrast
+labels: ['accessibility']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accessibility problems are treated as correctness problems, not preferences. Issues here are **public and permanent**, so please leave out personal and account information.
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      placeholder: '0.3.0'
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build identity
+      placeholder: 'a1b2c3d4e5f6'
+    validations:
+      required: true
+  - type: dropdown
+    id: assistive-technology
+    attributes:
+      label: How you were using it
+      options:
+        - Keyboard only
+        - Screen reader
+        - Magnification or large text
+        - High contrast or forced colours
+        - Reduced motion
+        - Other or prefer not to say
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: What you could not do
+      description: What you were trying to reach or operate, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where it happened
+      description: The extension's popup, its controls on the results page, its annotations on cards, or the beta website.
+    validations:
+      required: true

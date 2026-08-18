@@ -1,0 +1,68 @@
+name: Bug report
+description: Something the beta got wrong, or that stopped working
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are **public and permanent**. Please do not include your Amazon account details, order numbers, delivery addresses, or payment information — none of it is needed to reproduce a problem.
+
+        For a security or privacy problem, use [private vulnerability reporting](https://github.com/STEALTHTEMP1/shopping-companion-feedback/security/advisories/new) instead.
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: Shown in the extension's popup, for example 0.3.0
+      placeholder: '0.3.0'
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build identity
+      description: Also shown in the popup, after the version — for example a1b2c3d4e5f6
+      placeholder: 'a1b2c3d4e5f6'
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - ChromeOS
+        - Other or prefer not to say
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce it
+      description: Include the search terms you used — results differ by query, and the same search is usually enough to reproduce a comparison problem.
+      placeholder: |
+        1. Search Amazon UK for "dishwasher tablets 100"
+        2. Scroll until about 30 results have loaded
+        3. The unit price on the third card reads ...
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Optional, and never required to file a report. If you attach one, crop or blur anything personal first — your name, address, order history, and any unrelated tabs.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you send
+      options:
+        - label: I have removed personal and account information from anything I pasted or attached.
+          required: true

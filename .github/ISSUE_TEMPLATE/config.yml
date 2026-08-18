@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security or privacy problem privately
+    url: https://github.com/STEALTHTEMP1/shopping-companion-feedback/security/advisories/new
+    about: Use private vulnerability reporting so nothing sensitive is public while it is fixed. Please do not open a public issue for these.
+  - name: How feedback is handled
+    url: https://github.com/STEALTHTEMP1/shopping-companion-feedback/blob/main/docs/feedback-handling.md
+    about: Who reads reports, how they are prioritised, how long they are kept, and how to have something removed.
