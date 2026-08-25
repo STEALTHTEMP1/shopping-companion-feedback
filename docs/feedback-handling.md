@@ -20,6 +20,10 @@ guaranteed service level.
 | Issues in this repository | Public and searchable, permanently, including after they are closed |
 | [Private vulnerability reporting](../../security/advisories/new) | Visible only to you and the maintainer until resolved |
 
+A GitHub account and sign-in are required to submit through either route. This
+is a real access limitation of the beta contact model, not an anonymous support
+channel.
+
 There is no email address for this beta. That is deliberate: publishing must not
 depend on running a mail service. If one is added later it will be stated here
 and on the website's privacy page.
