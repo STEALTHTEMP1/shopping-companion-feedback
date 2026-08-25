@@ -1,0 +1,49 @@
+name: Idea or general feedback
+description: Suggest an improvement or tell us what was useful, confusing, or missing
+title: '[Feedback] '
+labels: ['feedback', 'status: needs triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Shopping Companion. Issues here are **public and permanent**, so please leave out personal, account, order, delivery, and payment information.
+
+        For a security or privacy problem, use [private vulnerability reporting](https://github.com/STEALTHTEMP1/shopping-companion-feedback/security/advisories/new) instead.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of feedback
+      options:
+        - An idea or feature request
+        - Something was confusing or hard to discover
+        - Something useful worked especially well
+        - Documentation or instructions could improve
+        - Other feedback
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What were you trying to do?
+      description: Describe the shopping or comparison task, without including account or order details.
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What should stay the same or change?
+      description: Explain the outcome that would be more useful. A proposed solution is welcome but not required.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Extension version, if relevant
+      placeholder: '0.3.0'
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you send
+      options:
+        - label: I have not included personal, account, order, delivery, or payment information.
+          required: true

@@ -1,6 +1,7 @@
 name: Accessibility report
 description: Something unusable with a keyboard, screen reader, magnification, or contrast
-labels: ['accessibility']
+title: '[Accessibility] '
+labels: ['accessibility', 'status: needs triage']
 body:
   - type: markdown
     attributes:
