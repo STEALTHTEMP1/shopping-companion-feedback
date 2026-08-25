@@ -13,7 +13,9 @@ itself is distributed from the beta website.
 | --- | --- |
 | A bug, or something that looks wrong | [Open a bug report](../../issues/new?template=bug.yml) |
 | Something unusable with a keyboard, screen reader, magnification, or contrast | [Open an accessibility report](../../issues/new?template=accessibility.yml) |
+| An idea, suggestion, or general feedback | [Share feedback](../../issues/new?template=feedback.yml) |
 | A question about the beta, install, or scope | [Ask a question](../../issues/new?template=question.yml) |
+| Beta access, content removal, licensing, research, media, or another administrative inquiry | [Open an administrative inquiry](../../issues/new?template=administrative.yml) |
 | A security or privacy problem | [Report it privately](../../security/advisories/new) — please do not open a public issue |
 
 Issues here are **public and permanent**. Do not paste your Amazon account
@@ -33,6 +35,11 @@ act on and one we cannot.
 [`docs/feedback-handling.md`](docs/feedback-handling.md) states who reads
 reports, how they are prioritised, how long they are kept, and how to have
 something you sent removed.
+
+Every issue filed through a form enters the `status: needs triage` inbox. Public
+status labels show whether a report is waiting for triage, waiting for the
+reporter, planned, in progress, or resolved. When a change ships, the report is
+closed with the release version or other outcome recorded in the issue.
 
 ## Scope
 

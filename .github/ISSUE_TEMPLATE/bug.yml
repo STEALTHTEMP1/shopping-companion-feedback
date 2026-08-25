@@ -1,6 +1,7 @@
 name: Bug report
 description: Something the beta got wrong, or that stopped working
-labels: ['bug']
+title: '[Bug] '
+labels: ['bug', 'status: needs triage']
 body:
   - type: markdown
     attributes:
@@ -22,6 +23,19 @@ body:
       label: Build identity
       description: Also shown in the popup, after the version — for example a1b2c3d4e5f6
       placeholder: 'a1b2c3d4e5f6'
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: Choose the closest description. The maintainer will confirm priority during triage.
+      options:
+        - I cannot install or use the beta
+        - The extension breaks or hides part of the page
+        - A comparison or annotation appears wrong
+        - Something is confusing or inconvenient
+        - Other
     validations:
       required: true
   - type: dropdown

@@ -1,0 +1,39 @@
+name: Administrative inquiry
+description: Beta access, content removal, licensing, research, media, or another non-product inquiry
+title: '[Administrative] '
+labels: ['administrative', 'status: needs triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form creates a **public and permanent** issue. Use it only when the inquiry and the answer can be public. Do not include identity documents, private contact details, account information, contracts, or other confidential material.
+
+        There is not yet a private administrative channel. If the inquiry cannot be handled publicly, do not submit it here. For a security, privacy, or personal-data problem, use [private reporting](https://github.com/STEALTHTEMP1/shopping-companion-feedback/security/advisories/new) instead.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Inquiry type
+      options:
+        - Beta access or invitation
+        - Remove or correct something submitted here
+        - Licensing or reuse
+        - Research, media, or partnership
+        - Other administrative inquiry
+    validations:
+      required: true
+  - type: textarea
+    id: inquiry
+    attributes:
+      label: Public summary of your inquiry
+      description: Include enough context to route the inquiry, but no confidential or personal information.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you send
+      options:
+        - label: I understand this issue and replies to it will be public.
+          required: true
+        - label: I have not included confidential, personal, account, order, delivery, or payment information.
+          required: true

@@ -6,6 +6,13 @@ Reports are read by **Shopping Companion**, the maintainer of this beta. There i
 no support team and no ticketing system behind this repository; a report goes
 directly to the person who can change the code.
 
+The repository is monitored through GitHub notifications. Issue forms place new
+reports in the triage inbox; a reopened report is returned there during review.
+The maintainer aims to triage security, privacy, installation, and page-breaking
+reports first, and other reports within five working days. The first human reply
+is the acknowledgement. These are response targets for the beta, not a
+guaranteed service level.
+
 ## Where reports live
 
 | Channel | Visibility |
@@ -16,6 +23,11 @@ directly to the person who can change the code.
 There is no email address for this beta. That is deliberate: publishing must not
 depend on running a mail service. If one is added later it will be stated here
 and on the website's privacy page.
+
+Administrative inquiries that can be public use the administrative issue form.
+There is not yet a private channel for other administrative inquiries, so do
+not submit one that requires confidential details. Security, privacy, and
+personal-data problems must use private vulnerability reporting.
 
 ## What we ask you not to send
 
@@ -33,6 +45,28 @@ problem, and issues here are public.
    Please include the search you used, since results differ by query.
 4. **Accessibility** — treated as a correctness problem, not a preference.
 5. **Everything else** — scope questions, suggestions, and improvements.
+
+The reporter's choice describes impact; it does not set priority. The maintainer
+confirms priority during triage so that a public form cannot create its own
+escalation.
+
+## Status and the feedback loop
+
+Every open report has one public status label:
+
+1. `status: needs triage` — received, but not yet assessed;
+2. `status: waiting for reporter` — a specific answer or reproduction detail is needed;
+3. `status: planned` — accepted and linked to the private engineering backlog;
+4. `status: in progress` — work has started;
+5. `status: resolved` — shipped, answered, or otherwise concluded.
+
+Triage records the type, confirmed priority, and disposition. Accepted product
+work is tracked in the private engineering repository without copying personal
+information. The public issue remains the user's source of truth. When work is
+complete, the maintainer posts the release version or explains the outcome,
+invites the reporter to verify where practical, applies `status: resolved`, and
+closes the issue. Duplicate reports remain linked to the canonical issue so the
+original signal is not lost.
 
 ## Retention
 

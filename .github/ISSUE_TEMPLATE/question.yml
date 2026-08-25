@@ -1,6 +1,7 @@
 name: Question
 description: A question about the beta, installing it, or what it covers
-labels: ['question']
+title: '[Question] '
+labels: ['question', 'status: needs triage']
 body:
   - type: markdown
     attributes:
