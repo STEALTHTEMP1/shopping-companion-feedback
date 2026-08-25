@@ -21,7 +21,8 @@ itself is distributed from the beta website.
 Issues here are **public and permanent**. Do not paste your Amazon account
 details, order numbers, delivery addresses, or payment information — none of it
 is needed to reproduce a problem. If you attach a screenshot, crop or blur
-anything personal first.
+anything personal first. A GitHub account and sign-in are required to submit an
+issue.
 
 ## What to include
 
